@@ -1,2 +1,2 @@
-# HERMES
-A universal conversation creator and dialog manager for games and stories using AI 
+# Story Teller
+A universal conversation generator and dialog manager for video games, tv, and movies using artifical intelligence.
