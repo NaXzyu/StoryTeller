@@ -48,8 +48,8 @@ This document outlines the development tasks, grouped into logical phases, requi
 
 | # | Task | Details/Instructions | Component(s) |
 |:-:|:-----|:---------------------|:-------------|
-| 1 | [ ] Set up main application entry (`main.py`) | Launch PyQt6 app, handle exceptions, show splash screen | Root, GUI |
-| 2 | [ ] Implement Main Window (`gui/main_window.py`) | Dockable panels, theme support, window state persistence | GUI |
+| 1 | [X] Set up main application entry (`main.py`) | Launch PyQt6 app, handle exceptions, show splash screen | Root, GUI |
+| 2 | [X] Implement Main Window (`gui/main_window.py`) | Dockable panels, theme support, window state persistence | GUI |
 | 3 | [ ] Implement Menu Bar (New/Open/Save Project) | Connect to DataStore, show recent projects, handle errors | GUI |
 | 4 | [ ] Implement Status Bar | Show current project, model, and status messages | GUI |
 | 5 | [ ] Implement Project Open/Save dialogs | Use native file dialogs, validate structure, show errors | GUI, DataStore |
@@ -118,10 +118,10 @@ This document outlines the development tasks, grouped into logical phases, requi
 
 | # | Task | Details/Instructions | Component(s) |
 |:-:|:-----|:---------------------|:-------------|
-| 1 | [ ] Write unit tests for all modules | Cover all logic, edge cases, error handling | Tests, All |
+| 1 | [/] Write unit tests for all modules | Cover all logic, edge cases, error handling (Started for main.py) | Tests, All |
 | 2 | [ ] Write integration tests for key workflows | Simulate end-to-end scenarios | Tests |
 | 3 | [ ] Refine GUI usability and appearance | Polish UI, accessibility, keyboard shortcuts | GUI |
-| 4 | [ ] Configure PyInstaller spec file | Include all resources, hidden imports, test builds | Project Root |
+| 4 | [X] Configure PyInstaller spec file | Integrate build logic into `main.py` via `storyteller build` command, spec file in `build/` | Project Root, Main |
 | 5 | [ ] Build and test executables for all target OSs | Windows, macOS, Linux | PyInstaller |
 | 6 | [ ] Finalize `README.md` and user documentation | Usage, troubleshooting, FAQ, diagrams | Docs |
 | 7 | [ ] Code cleanup, review, and polish | Lint, format, remove dead code, final review | All |
